@@ -60,6 +60,9 @@ html {
     border-right: 4px solid black;
     transform: rotate(-324deg);
     border-radius: 9px;
+    animation-name: armMoveRight;
+    animation-duration: 200ms;
+    
 }
 
 .tail {
@@ -94,7 +97,7 @@ html {
 
 .left-eye:before {
     content: '';
-    width: 38px;
+    width: 28px;
     height: 6px;
     position: absolute;
     background-color: #000;
@@ -106,7 +109,7 @@ html {
 
 .right-eye:before {
     content: '';
-    width: 38px;
+    width: 28px;
     height: 6px;
     position: absolute;
     background-color: #000;
@@ -245,14 +248,14 @@ html {
     }
 }
 
-@keyframes armMove {
+@keyframes armMoveRight {
     0% {
-       top: 25%;
+        left: -26px;
+        top: 92px;
     }
-    50% {
-        top: 30%;
-    }
+
     100%{
-        top: 25%;
+        left: 8px;
+        top: 58px;
     }
 }
