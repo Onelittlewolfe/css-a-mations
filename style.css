@@ -8,12 +8,17 @@
 }
 
 html {
-    cursor: url(torch.png), auto;
-    background-color: #000;
+    /* cursor: url(torch.png), auto; */
+    background-color: #fff;
+}
+
+#yoshi {
+    top: 500px;
+    left: 150px;
 }
 
 
-.main-body {
+#bigboo .main-body {
     position: relative;
     background-color: white;
     border: 4px solid black;
@@ -28,7 +33,7 @@ html {
     animation-direction: alternate-reverse;
 }
 
-.main-body::before {
+#bigboo .main-body::before {
     content: '';
     width: 150px;
     height: 150px;
@@ -40,7 +45,7 @@ html {
     left: 45px;
 }
 
-.main-body:hover .left-arm {
+#bigboo .main-body:hover .left-arm {
     left: 84px;
     top: 57px;
     /* border-bottom: 4px solid black; */
@@ -51,7 +56,7 @@ html {
     border-radius: 9px;
 }
 
-.main-body:hover .right-arm {
+#bigboo .main-body:hover .right-arm {
     left: 8px;
     top: 58px;
     /* border-bottom: 4px solid black; */
@@ -65,7 +70,7 @@ html {
     
 }
 
-.tail {
+#bigboo .tail {
     position: absolute;
     content: '';
     background-color: white;
@@ -79,7 +84,7 @@ html {
     transform: rotate(180deg);
 }
 
-.eye {
+#bigboo .eye {
     width: 20px;
     height: 28px;
     border-radius: 400px;
@@ -90,12 +95,12 @@ html {
     animation-direction: alternate-reverse;
 }
 
-.left-eye {
+#bigboo .left-eye {
     top: 55px;
     left: 32px;
 }
 
-.left-eye:before {
+#bigboo .left-eye:before {
     content: '';
     width: 28px;
     height: 6px;
@@ -107,7 +112,7 @@ html {
     top: -4px;
 }
 
-.right-eye:before {
+#bigboo .right-eye:before {
     content: '';
     width: 28px;
     height: 6px;
@@ -119,12 +124,12 @@ html {
     top: -4px;
 }
 
-.right-eye {
+#bigboo .right-eye {
     top: 55px;
     left: 80px;
 }
 
-.mouth {
+#bigboo .mouth {
     width: 68px;
     height: 85px;
     background-color: black;
@@ -138,7 +143,7 @@ html {
     border-bottom-left-radius: 400px;
 }
 
-.mouth:after {
+#bigboo .mouth:after {
     content: '';
     position: absolute;
     width: 68px;
@@ -152,7 +157,7 @@ html {
     z-index: 2;
 }
 
-.tongue {
+#bigboo .tongue {
     width: 51px;
     height: 67px;
     background-color: red;
@@ -163,7 +168,7 @@ html {
     transform: rotate(-3deg);
 }
 
-.teeth {
+#bigboo .teeth {
     width: 26px;
     height: 26px;
     background-color: #fff;
@@ -175,7 +180,7 @@ html {
     z-index: 2;
 }
 
-.teeth:nth-child(2) {
+#bigboo .teeth:nth-child(2) {
     top: 4px;
     left: 47px;
     width: 20px;
@@ -183,20 +188,20 @@ html {
     transform: rotate(18deg);
 }
 
-.teeth:nth-child(3) {
+#bigboo .teeth:nth-child(3) {
     top: 8px;
     left: 18px;
     transform: rotate(34deg);
 }
 
-.arm {
+#bigboo .arm {
     background-color: #fff;
     /* border: 4px solid #000; */
     width: 44px;
     height: 33px;
 }
 
-.left-arm {
+#bigboo .left-arm {
     left: 142px;
     top: 92px;
     /* border-bottom: 4px solid black; */
@@ -207,7 +212,7 @@ html {
     border-radius: 9px;
 }
 
-.right-arm {
+#bigboo .right-arm {
     left: -26px;
     top: 92px;
     /* border-bottom: 4px solid black; */
@@ -218,7 +223,7 @@ html {
     border-radius: 9px;
 }
 
-@keyframes eyes {
+/* @keyframes eyes {
     0% {
         opacity: 1;
         width: 20px;
@@ -234,8 +239,8 @@ html {
         width: 20px;
         height: 28px;
     }
-}
-
+} */
+/* 
 @keyframes bob {
     0% {
        top: 25%;
@@ -258,4 +263,83 @@ html {
         left: 8px;
         top: 58px;
     }
+} */
+
+
+#yoshi .head {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border-radius: 200px;
+    border: 4px solid #000;
+}
+
+#yoshi .nose {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border-radius: 200px;
+    border: 4px solid #000;
+    left: -82px;
+    top: -37px;
+    z-index: -1;
+}
+
+#yoshi .eye {
+    background-color: green;
+    width: 54px;
+    height: 97px;
+    border-radius: 200px 200px 200px 179px;
+    transform: rotate(22deg);
+    top: -66px;
+    left: 76px;
+    box-shadow: 0px -41px 0px #fff inset;
+    border: 4px solid #000;
+}
+
+#yoshi .eye:after {
+    content: '';
+    box-shadow: 1px -37px 0px #000;
+    width: 15px;
+    height: 23px;
+    position: absolute;
+    border-radius: 200px;
+    top: 91px;
+    left: -3px;
+    transform: rotate(-2deg);
+}
+
+#yoshi .backhead {
+    width: 117px;
+    height: 161px;
+    background-color: green;
+    border-radius: 200px;
+    left: 63px;
+    border: 4px solid #000;
+    z-index: -1;
+    top: -39px;
+}
+
+#yoshi .mouth {
+    width: 126px;
+    height: 83px;
+    background-color: #fff;
+    border-radius: 200px;
+    top: 64px;
+    left: -2px;
+    border: 2px lightgreen solid;
+}
+
+#yoshi .lowermouth {
+    width: 129px;
+    height: 96px;
+    background-color: #fff;
+    border-radius: 200px;
+    top: 84px;
+    left: -37px;
+    border: 4px #000 solid;
+    /* border-bottom: none; */
+    border-left: none;
+    border-right: none;
+    border-top: none;
 }
